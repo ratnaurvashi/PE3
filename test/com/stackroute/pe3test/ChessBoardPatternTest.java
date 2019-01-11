@@ -1,3 +1,6 @@
+package com.stackroute.pe3test;
+
+import com.stackroute.pe3main.ChessBoardPattern;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

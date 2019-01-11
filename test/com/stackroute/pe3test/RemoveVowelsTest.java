@@ -1,10 +1,10 @@
+package com.stackroute.pe3test;
+import com.stackroute.pe3main.RemoveVowels;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.junit.Assert.*;
 
 public class RemoveVowelsTest {

@@ -1,16 +1,17 @@
+package com.stackroute.pe3test;
+import com.stackroute.pe3main.CheckConsecutive;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
 import static org.junit.Assert.*;
 
-public class checkConsecutiveTest {
+public class CheckConsecutiveTest {
 
-    checkConsecutive test;
+    CheckConsecutive test;
 
     @Before
     public void setUp() throws Exception {
-        test = new checkConsecutive();
+        test = new CheckConsecutive();
     }
 
     @After

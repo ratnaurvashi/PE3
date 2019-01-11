@@ -1,7 +1,8 @@
+package com.stackroute.pe3test;
+import com.stackroute.pe3main.MatrixSum;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
 import static org.junit.Assert.*;
 
 public class MatrixSumTest {
@@ -39,6 +40,6 @@ public class MatrixSumTest {
     @Test
     public void matrixSumNull(){
         int[][] result = test.matrixSum(null, null, 0,0);
-        assertEquals(null,result);
+        assertNull(null,result);
     }
 }

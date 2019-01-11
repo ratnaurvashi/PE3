@@ -1,5 +1,6 @@
+package com.stackroute.pe3test;
+import com.stackroute.pe3main.StudentMarks;
 import org.junit.Test;
-
 import static org.junit.Assert.*;
 
 public class StudentMarksTest {

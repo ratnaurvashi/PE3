@@ -1,15 +1,19 @@
-import java.util.Scanner;
+package com.stackroute.pe3main;
 
 public class StudentMarks {
     public String checkGrade(int[] studentGrades){
+        //getting number of students by calling length method
         int numOfStud = studentGrades.length;
+        //checking for null case
         if((numOfStud==0))
             return null;
+        //flag value for checking if the marks go out of range
         int flag=1;
         for(int i=0;i<numOfStud;i++){
             if(studentGrades[i]>=0 && studentGrades[i]<=100)
                 continue;
             else{
+                //if any marks are out of range the break
                 flag=0;
                 break;
             }
@@ -18,18 +22,5 @@ public class StudentMarks {
             return "Marks are in range 0-100.";
         else
             return "Error!";
-    }
-
-    public static void main(String[] args){
-        StudentMarks obj = new StudentMarks();
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number of Students: ");
-        int numOfStudents = sc.nextInt();
-        int[] stuGrades = new int[numOfStudents];
-        System.out.println("Enter Student grades: ");
-        for(int i=0;i<numOfStudents;i++){
-            stuGrades[i]=sc.nextInt();
-        }
-        System.out.println(obj.checkGrade(stuGrades));
     }
 }
